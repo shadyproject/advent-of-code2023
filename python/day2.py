@@ -7,7 +7,6 @@ def problem_one(num_red=12, num_green=13, num_blue=14):
     valid_game_ids = []
 
     for game in input.split("\n"):
-        print(game)
         (game_id, plays) = game.split(":")
         valid_game = True
         # we don't really care about the "plays" for this just the numbers of colored cubes
@@ -15,7 +14,6 @@ def problem_one(num_red=12, num_green=13, num_blue=14):
         plays = plays.replace(";", ",")
         for play in plays.split(","):
             play = play.strip()
-            print(play)
             (count, color) = play.split(" ")
             if color == "red":
                 if int(count) > num_red:
