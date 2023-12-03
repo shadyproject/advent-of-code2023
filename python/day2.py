@@ -1,6 +1,4 @@
 from aocd import get_data
-from functools import reduce
-import operator
 
 
 def problem_one(num_red=12, num_green=13, num_blue=14):
